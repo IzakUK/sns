@@ -26,7 +26,7 @@ document.body.addEventListener('click', () => {
 
 // Countdown until I become UNC status
 function updateTimer() {
-    const targetDate = new Date("2025-01-10T9:30:00Z"); // GMT for the 7th
+    const targetDate = new Date("2025-01-10T09:30:00Z"); // GMT for the 7th
     const now = new Date(); // Current date and time
     const diff = targetDate - now; // Calculates the target date to the current by the milliseconds
 
@@ -50,6 +50,6 @@ function updateTimer() {
     document.getElementById("timer").innerText = formattedTime;
 }
 
-// Update the timer every 1 milliseconds for precision
-setInterval(updateTimer, 1); // Not sure if putting it as instant will cause lag, so 5ms delay should be A-Okay :D
+// Update the timer every 10 milliseconds for precision
+setInterval(updateTimer, 5); // Not sure if putting it as instant will cause lag, so 5ms delay should be A-Okay :D
 updateTimer(); // To keep it looking RESPONSIVE
