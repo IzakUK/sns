@@ -26,7 +26,7 @@ document.body.addEventListener('click', () => {
 
 // Countdown until I become UNC status
 function updateTimer() {
-    const targetDate = new Date("2024-12-13T14:00:00Z"); // GMT for the 7th
+    const targetDate = new Date("2025-01-10T9:30:00Z"); // GMT for the 7th
     const now = new Date(); // Current date and time
     const diff = targetDate - now; // Calculates the target date to the current by the milliseconds
 
